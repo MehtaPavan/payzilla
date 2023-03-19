@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "570192746266",
+    "project_id": "payzilla-6eb4f",
+    "storage_bucket": "payzilla-6eb4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570192746266:android:c539ab02628e37a8f9fea3",
+        "android_client_info": {
+          "package_name": "com.example.payzilla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570192746266-ltu23qgm2fbj43stkpqvbbkk67frsqji.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.payzilla",
+            "certificate_hash": "f1bc7b1524866381384bbe31ec3ca0e1d69f2009"
+          }
+        },
+        {
+          "client_id": "570192746266-2ge493lmv4jbg7sflqhqs8re9tbhktv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuOeBKA9KEsOb54zZD2OnTdygPEXABBhA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570192746266-2ge493lmv4jbg7sflqhqs8re9tbhktv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
