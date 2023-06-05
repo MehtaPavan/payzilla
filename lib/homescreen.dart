@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:payzilla/crypto.dart';
 import 'package:payzilla/main.dart';
+import 'package:payzilla/stock/stock_page.dart';
 
 class Homescreen extends StatefulWidget {
   const Homescreen({Key? key}) : super(key: key);
@@ -137,7 +138,7 @@ class _HomescreenState extends State<Homescreen> {
               children: [
                 InkWell(
                   onTap: (){
-                    // Navigator.push(context, MaterialPageRoute(builder: (context)=>personal()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> const Stockpage()));
                   },
                   child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),),
                     child: Column(
