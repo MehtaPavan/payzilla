@@ -56,6 +56,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   sqflite: ^2.2.8+4
   web_socket_channel: ^2.4.0
+  dio: ^5.2.0+1
+  connectivity_plus: ^4.0.1
+  get: ^4.6.5
 
 dev_dependencies:
   flutter_test:

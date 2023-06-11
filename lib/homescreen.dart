@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:payzilla/crypto.dart';
 import 'package:payzilla/main.dart';
 import 'package:payzilla/stock/stock_page.dart';
+import 'currency/views/screens/home_page.dart';
 
 class Homescreen extends StatefulWidget {
   const Homescreen({Key? key}) : super(key: key);
@@ -93,7 +94,7 @@ class _HomescreenState extends State<Homescreen> {
             //   ),
             // ),
 
-        const SizedBox(height: 30),
+        const SizedBox(height: 20), 
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -132,7 +133,7 @@ class _HomescreenState extends State<Homescreen> {
           ],
         ),
 
-            const SizedBox(height: 30),
+            const SizedBox(height: 40),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -155,16 +156,16 @@ class _HomescreenState extends State<Homescreen> {
                 SizedBox(height: screenHeight * 0.0),
                 InkWell(
                   onTap: (){
-                    // Navigator.push(context, MaterialPageRoute(builder: (context)=>personal()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>const Curr()));
                   },
                   child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset('assets/images/inc.png',
+                        Image.asset('assets/images/cc.png',
                           width: 150,
-                          height: 150,),
-                        Text("Income Tax",style: TextStyle(color: Colors.black,fontSize: 23,fontWeight:FontWeight.w500),)
+                          height: 120,),
+                        Text("Currency\nExchange",style: TextStyle(color: Colors.black,fontSize: 23,fontWeight:FontWeight.w500),)
                       ],),
                   ),
                 ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/routes/get_route.dart';
 import './models/database_provider.dart';
 import 'package:provider/provider.dart';
 // screens
@@ -6,6 +7,11 @@ import './screens/category_screen.dart';
 import './screens/expense_screen.dart';
 import './screens/all_expenses.dart';
 import 'package:payzilla/Homescreen.dart';
+
+import 'currency/utils/theme.dart';
+import 'currency/views/screens/history_page.dart';
+import 'currency/views/screens/home_page.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(ChangeNotifierProvider(
@@ -93,3 +99,31 @@ class expenseapp extends StatelessWidget {
     );
   }
 }
+
+
+class Curr extends StatefulWidget {
+  const Curr({Key? key}) : super(key: key);
+
+  @override
+  State<Curr> createState() => _CurrState();
+}
+
+class _CurrState extends State<Curr> {
+  @override
+  Widget build(BuildContext context) {
+    WidgetsFlutterBinding.ensureInitialized();
+    return GetMaterialApp(
+          debugShowCheckedModeBanner: false,
+          theme: lightTheme(),
+          darkTheme: darkTheme(),
+          getPages: [
+            GetPage(name: "/", page: () => CurrencyPage()),
+            GetPage(name: "/history_page", page: () => const HistoryPage()),
+          ],
+        );
+    }
+  }
+
+
+
+
